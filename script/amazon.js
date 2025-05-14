@@ -1,3 +1,5 @@
+import { cart } from "../data/cart.js";
+
 // Variable of Set Product into the Webpage
 let productHTML = "";
 
