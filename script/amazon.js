@@ -89,6 +89,15 @@ document.querySelectorAll(".js-add-to-cart-button").forEach((button) => {
       });
     }
 
-    console.log(cart);
+    // This variable to Add to cart Quantity
+    let cartQuantity = 0;
+
+    // This is cart item to increase Add cart Item Quantity
+    cart.forEach((item) => {
+      cartQuantity += item.quantity;
+    });
+
+    // This is show webpage Add to cart Quantity
+    document.querySelector(".js-cart-quantity").innerHTML = cartQuantity;
   });
 });
